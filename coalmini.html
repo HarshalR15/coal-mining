@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coal Mining</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <link href="./bootstrap.css">
+    <style>
+        * {
+
+
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .header {
+            min-height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/COALPIC.avif);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        nav {
+            display: flex;
+            padding-bottom: 4px;
+            padding: 1% 2%;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        nav img {
+            width: 100px;
+            border-radius: 40px;
+        }
+
+        .nav-links {
+            flex: 1;
+            text-align: right;
+
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+
+        .nav-links ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        .nav-links ul li::after {
+            content: '  ';
+            width: 0px;
+            height: 2px;
+            background: #1bf1d1;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+
+        .text-box {
+            width: 90%;
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .text-box H1 {
+            font-size: 70PX;
+        }
+
+        .button {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 12px 34px;
+            font-size: 17px;
+            background: transparent;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            border: 1px solid #f44336;
+            background-color: #f44336;
+            transition: 1s;
+        }
+
+        nav.fa {
+            display: none;
+        }
+
+        @media(max-width:700px) {
+            .text-box H1 {
+                font-size: 20PX;
+            }
+
+            .nav-links ul li {
+                display: block;
+            }
+
+            .nav-links {
+                position: absolute;
+                background: #f44336;
+                height: 100vh;
+                width: 200px;
+                top: 0;
+                right: 0;
+                text-align: left;
+                z-index: 2;
+                transition: 1s;
+            }
+
+            nav.fa {
+                display: block;
+                color: #fff;
+                margin: 10px;
+                font-size: 22px;
+                cursor: pointer;
+            }
+            .nav-links 
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <img src="./images/logo.jpg" alt="Logo">
+            <div class="nav-links" id="navlinks">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <ul>
+                    <li><a href="file:///C:/Users/ASUS/Desktop/web projects/coalmini.html">HOME</a></li>
+                    <li><a href="C:\Users\ASUS\Desktop\web projects\Contact.html">CONTACT US</a></li>
+                    <li><a href="file:///C:/Users/ASUS/Desktop/web%20projects/services.html">PRODUCTS & SERVICES</a>
+                    </li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">FEEDBACK</a></li>
+
+                </ul>
+
+            </div>
+            <i class="fa-sharp fa-solid fa-bars"></i>
+        </nav>
+        <div class="text-box">
+            <h1><span style="color: rgb(224, 105, 19) ;">COAL</span> INDIA <span style="color:green ;">LIMITED</span>
+            </h1>
+            <a href="https://www.coalindia.in/" class="button">Visit us to know more</a>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
